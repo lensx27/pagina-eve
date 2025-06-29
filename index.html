@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Amor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffeef8 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .dancing-font {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: #ff4d6d;
+            transform: rotate(45deg);
+            position: relative;
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        .heart:before, .heart:after {
+            content: '';
+            width: 100px;
+            height: 100px;
+            background-color: #ff4d6d;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .heart:before {
+            top: -50px;
+            left: 0;
+        }
+        
+        .heart:after {
+            top: 0;
+            left: -50px;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: rotate(45deg) scale(1); }
+            25% { transform: rotate(45deg) scale(1.1); }
+            50% { transform: rotate(45deg) scale(1); }
+            75% { transform: rotate(45deg) scale(1.1); }
+            100% { transform: rotate(45deg) scale(1); }
+        }
+        
+        .polaroid {
+            background: white;
+            padding: 15px 15px 60px 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transform: rotate(-3deg);
+            transition: all 0.3s ease;
+        }
+        
+        .polaroid:hover {
+            transform: rotate(1deg) scale(1.05);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .message-box {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 77, 109, 0.1);
+        }
+        
+        .btn-heart {
+            background: linear-gradient(45deg, #ff4d6d, #ff8fa3);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-heart:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 77, 109, 0.3);
+        }
+        
+        .custom-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .custom-scroll::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background-color: #ff4d6d;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center p-6 pb-20">
+    <div class="absolute top-10 left-10 hidden md:block">
+        <div class="heart"></div>
+    </div>
+    
+    <div class="absolute bottom-10 right-10 hidden md:block">
+        <div class="heart"></div>
+    </div>
+    
+    <header class="text-center mb-12">
+        <h1 class="dancing-font text-5xl md:text-7xl font-bold text-pink-600 mb-4">Para mi preciosa</h1>
+        <p class="text-xl text-gray-600">Por nuestro primer año</p>
+    </header>
+    
+    <main class="w-full max-w-4xl">
+        <div class="flex flex-col lg:flex-row gap-8 items-center justify-center mb-16">
+            <div class="polaroid floating">
+                <img src="imagenes/Imagen de WhatsApp 2025-06-28 a las 16.13.45_c22ce460.jpg" alt="Pareja feliz abrazándose al atardecer en la playa con ropa casual" class="w-full h-auto" />
+            </div>
+            
+            <div class="message-box p-8 lg:w-1/2">
+                <h2 class="dancing-font text-3xl md:text-4xl font-bold text-pink-600 mb-4">Este Mensaje es para Ti</h2>
+                <div class="h-64 overflow-y-auto custom-scroll pr-4">
+                    <p class="text-gray-700 mb-4">Querida princesa de mi corazón</p>
+                    <p class="text-gray-700 mb-4">Desde el momento en que entraste en mi vida, todo tomó un nuevo color. Cada día a tu lado es un regalo que atesoro con todo mi corazón.</p>
+                    <p class="text-gray-700 mb-4">Tu sonrisa ilumina mis días más oscuros, tu voz es la melodía más hermosa que he escuchado, y tu amor es el faro que guía mi vida.</p>
+                    <p class="text-gray-700 mb-4">Quiero que sepas que aunque no siempre encuentre las palabras correctas para expresar lo que siento, cada latido de mi corazón lleva tu nombre.</p>
+                    <p class="text-gray-700 mb-4">Esta pequeña página es solo un reflejo diminuto de todo el amor infinito que llevo dentro para ti.</p>
+                    <p class="dancing-font text-xl text-pink-600 mt-6 text-center">Con todo mi amor, Morningstar</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                <div class="text-pink-500 text-4xl mb-4 text-center">❤️</div>
+                <h3 class="text-xl font-semibold text-center text-gray-800 mb-3">Momentos</h3>
+                <p class="text-gray-600 text-center">Todos los días contigo se convierten en recuerdos que guardo como tesoros.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                <div class="text-pink-500 text-4xl mb-4 text-center">⭐</div>
+                <h3 class="text-xl font-semibold text-center text-gray-800 mb-3">Lo Que Me Encanta </h3>
+                <p class="text-gray-600 text-center">Todo de ti , pero sobre lo que mas me encanta es lo linda que haces mi vida.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                <div class="text-pink-500 text-4xl mb-4 text-center">🌹</div>
+                <h3 class="text-xl font-semibold text-center text-gray-800 mb-3">Mi Promesa</h3>
+                <p class="text-gray-600 text-center">Amarte cada día más y hacerte feliz como tú me haces feliz a mí.</p>
+            </div>
+        </div>
+        
+        <div class="flex justify-center mb-16">
+            <div class="relative w-full max-w-2xl">
+                <div class="absolute -inset-1 bg-gradient-to-r from-pink-400 to-purple-500 rounded-lg blur opacity-25"></div>
+                <div class="relative bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="dancing-font text-3xl text-center font-bold text-pink-600 mb-6">Te dedico esta cancion</h2>
+                    <div class="flex flex-col md:flex-row items-center gap-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/970cc2cd-8a8c-4b5f-8ef6-0c61289c26b5.png" alt="Imagen de un vinilo con corazones donde debería estar la portada de nuestra canción especial" class="rounded-full w-40 h-40 object-cover" />
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Contigo en la distancia</h3>
+                            <p class="text-gray-600 mb-4">
+                                                                En parte de mi alma<br>
+                                Ya nada me consuela<br>
+                                Si no estás tú también<br>
+                                Más allá de tus labios<br>
+                                Del sol y las estrellas<br>
+                                Contigo en la distancia<br>
+                                Amada mía, estoy
+                            </p>
+                            <div class="w-full mt-6 text-center">
+                             <a href="https://youtu.be/PHOwNNsqA0s?list=RDPHOwNNsqA0s" target="_blank" class="btn-heart px-6 py-3 rounded-full font-semibold text-lg shadow-lg dancing-font inline-block">
+                                Escuchar Canción
+                             </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <button class="btn-heart px-8 py-4 rounded-full font-semibold text-lg shadow-lg dancing-font" id="surpriseBtn">
+                Haz clic para una sorpresa
+            </button>
+            
+            <div class="hidden mt-8" id="surpriseMessage">
+                <p class="dancing-font text-2xl text-pink-600">¡Te amo más de lo que las palabras pueden expresar!</p>
+                <div class="flex justify-center mt-4">
+                    <div class="heart" style="width: 50px; height: 50px; margin: 0 5px;"></div>
+                    <div class="heart" style="width: 50px; height: 50px; margin: 0 5px;"></div>
+                    <div class="heart" style="width: 50px; height: 50px; margin: 0 5px;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="mt-20 text-center text-gray-500 text-sm">
+        <p>Hecho con ❤️ para ti</p>
+        <p class="mt-1">© <span id="currentYear"></span> - Para la mujer más especial del mundo</p>
+    </footer>
+
+    <script>
+        // Mostrar sorpresa al hacer clic en el botón
+        document.getElementById('surpriseBtn').addEventListener('click', function() {
+            const surprise = document.getElementById('surpriseMessage');
+            surprise.classList.toggle('hidden');
+            
+            if (!surprise.classList.contains('hidden')) {
+                this.textContent = '❤️ ¡Gracias por ser mi amor! ❤️';
+            } else {
+                this.textContent = 'Haz clic para una sorpresa';
+            }
+        });
+        
+        // Establecer año actual en el footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Efecto de confeti al cargar la página
+        setTimeout(() => {
+            const createConfetti = () => {
+                const confetti = document.createElement('div');
+                confetti.style.position = 'fixed';
+                confetti.style.width = '10px';
+                confetti.style.height = '10px';
+                confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+                confetti.style.borderRadius = '50%';
+                confetti.style.top = '-10px';
+                confetti.style.left = `${Math.random() * window.innerWidth}px`;
+                confetti.style.opacity = '0.7';
+                confetti.style.zIndex = '9999';
+                confetti.style.animation = `fall ${Math.random() * 3 + 2}s linear forwards`;
+                
+                document.body.appendChild(confetti);
+                
+                setTimeout(() => {
+                    confetti.remove();
+                }, 5000);
+            };
+            
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes fall {
+                    to {
+                        transform: translateY(${window.innerHeight + 10}px);
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            for (let i = 0; i < 50; i++) {
+                setTimeout(createConfetti, i * 100);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
+
